@@ -37,7 +37,9 @@ LL_Status delete_first_node(struct node **);
 LL_Status delete_last_node(struct node **);
 // Deletes given node of list. If list is empty it returns empty status
 LL_Status delete_given_node(struct node **, int);
-// Searchs list to find the given node by value. Returns NULL if it didn't found it. 
+// Searchs list to find the given node by value.
+// Returns a pointer to the node if it founds it
+// Returns NULL if it didn't found it.
 struct node *search_node(struct node *, int);
 // Sorts list by merge sort algortihm.
 // This function returns a new head pointer, which must
